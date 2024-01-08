@@ -1,0 +1,61 @@
+.trailer{
+    background-image: url(./../assets/img/cinema/cinema-vermelho.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 800px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    border-bottom:  2px solid red;
+   
+}
+
+.iframe{
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    width: 80%;
+    height: 60%;
+    margin-top: 16px;
+}
+video{
+    width: 100%;
+    height: 100%;
+     
+}
+
+.sinopse{
+    display: block;
+    width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 600px;
+    margin-top: 0px;
+    margin-bottom: 30px;
+    border-radius: 5%;
+    border: solid 3px red
+}
+
+@media screen and (max-width:1024px){
+    .trailer{
+        background-position: center;
+     }
+    .iframe{
+        width: 100%;
+        height: 60%;
+    } 
+}
+@media screen and (max-width:767px){
+    .trailer{
+       height: 640px;
+       background-position: center;
+       padding-bottom: 40px;
+    }
+    .iframe{
+        width: 100%;
+        height: 59%;
+    }
+    .sinopse{
+       width: 95%;
+    }   
+}
