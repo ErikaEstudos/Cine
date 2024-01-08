@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Cine Erika/ Trailer</title>
+  </head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+  <link rel="stylesheet" href="./../../css trailer/star.css">
+  <link rel="stylesheet" href="./../../css trailer/body.css">
+  <link rel="stylesheet" href="./../../css trailer/main-header.css">
+  <link rel="stylesheet" href="./../../css trailer/main-footer.css">
+  <link rel="stylesheet" href="../../css trailer/trailler.css">
+  <body>
+    <header class="main-header">
+      <img class="pipoca" src="./../../assets/img/cinema/PIPOCA-2.png" alt="imagem pipoca"> 
+      <p class="titulo-header">BATMAN</p>
+      <a class="botaoVoltar" href="./../../html/index.html">VOLTAR</a>
+    </header>
+
+    <section class="two-header" >
+      <img class="pipoca-two" src="./../../assets/img/cinema/PIPOCA-2.png" alt="imagem pipoca"> 
+      <a class="botaoVoltar" href="./../../html/index.html">VOLTAR</a>
+    </section>
+    
+    <section class="trailer">
+      <div class="iframe">
+        <video src="./../../assets/VIDEOS/SUPER-HEROIS/The Batman.mp4" 
+        poster="./../../assets/img/cinema/batman2.png"  controls muted loop></video>
+      </div>
+    </section>
+    
+    <section class="estrelas">
+      <div class="container">
+        <div class="post">
+          <div class="text">Obrigado por nos avaliar!</div>
+          <div class="edit">EDITAR</div>
+        </div>
+        <div class="star-widget">
+          <input type="radio" name="rate" id="rate-5">
+          <label for="rate-5" class="fas fa-star"></label>
+          <input type="radio" name="rate" id="rate-4">
+          <label for="rate-4" class="fas fa-star"></label>
+          <input type="radio" name="rate" id="rate-3">
+          <label for="rate-3" class="fas fa-star"></label>
+          <input type="radio" name="rate" id="rate-2">
+          <label for="rate-2" class="fas fa-star"></label>
+          <input type="radio" name="rate" id="rate-1">
+          <label for="rate-1" class="fas fa-star"></label>
+
+          <form action="#">
+            <header></header>
+            <div class="textarea">
+              <textarea cols="30" placeholder="Descreva sua experiência..."></textarea>
+            </div>
+            <div class="btn">
+              <button type="submit">Postar</button>
+            </div>
+          </form>
+
+        </div>
+      </div>
+    </section>
+
+    <script>
+      const btn = document.querySelector("button");
+      const post = document.querySelector(".post");
+      const widget = document.querySelector(".star-widget");
+      const editBtn = document.querySelector(".edit");
+      btn.onclick = ()=>{
+        widget.style.display = "none";
+        post.style.display = "block";
+        editBtn.onclick = ()=>{
+          widget.style.display = "block";
+          post.style.display = "none";
+        }
+        return false;
+      }
+    </script>
+    <img class="sinopse" src="./../../assets/img/SINOPSE/SINOPSE-1/batman.png" alt="imagem de sinopse">
+    
+    <footer class="main-footer">
+      <a href="./HomemAranha.html">
+      <img class="logoEO" src="./../../assets/img/GERAL/LOGO-EO.png" alt="imagem logo EO">
+      </a>
+      <p class="arroba"><strong>erikaoliveiracontatos@gmail.com</strong></p>
+    </footer>
+
+  </body>
+</html>

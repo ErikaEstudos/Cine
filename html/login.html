@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <title>Cine Erika/ Login</title>
+   
+  </head>
+
+  
+  <link rel="stylesheet" href="./../css-login/login.css"/>
+  <link rel="stylesheet" href="./../css-login/body.css">
+  <link rel="stylesheet" href="./../css-login/header-login.css">
+  <link rel="stylesheet" href="./../css-login/footer.css">
+  <link rel="stylesheet" href="./../css-login/arroba.css">
+  
+  <body>
+    <header class="header-login">
+      <a class="botaoVoltar" href="./index.html">VOLTAR</a>
+      <img class="cinErika" src="./../assets/img/GERAL/CINE-ERIKA2.png" alt="imagem logo Cine Erika">
+      <img class="img-ticket" src="./../assets/img/cinema/ticket-2.png" alt="">
+    </header>
+    
+     <section class="container">
+    <div class="wrapper">
+      <a class="buttonX" href="./../html/index.html">X</a>
+      
+      <div class="form signup">
+        <header>Inscrição</header>
+        <form action="#">
+          <input type="text" placeholder="Seu Nome" required />
+          <input type="text" placeholder="Seu Email" required />
+          <input type="password" placeholder="Senha" required />
+          <div class="checkbox">
+            <input type="checkbox" id="signupCheck" />
+            <label for="signupCheck">Aceito todos os termos e condições</label>
+          </div>
+          <input type="submit" value="Cadastre-se" />
+        </form>
+      </div>
+
+      <div class="form login">
+        <header>Login</header>
+        <form action="#">
+          <input type="text" placeholder="Seu Email" required />
+          <input type="password" placeholder="Senha" required />
+          <a href="#">Esqueceu a Senha?</a>
+          <input type="submit" value="Login" />
+        </form>
+      </div>
+    </div>
+  </section>
+  <footer class="login-footer">
+    <a href="./index.html">   
+    <img class="logoEO" src="./../assets/img/GERAL/LOGO-EO.png" alt="imagem logo EO">
+    </a>
+    <div class="links">
+      <a href="https://github.com/ErikaEstudos">
+      <img class="gitHub" src="./../assets/img/GERAL/Hub.png" alt="imagem hub">
+      </a>
+      <a href="">
+      <img class="linkedin" src="./../assets/img/GERAL/linkedin.png" alt="imagem linkedin">
+      </a>
+      <a href="https://wa.me/5522998307032">
+      <img class="whatsApp" src="./../assets/img/GERAL/whatsApp.png" alt="imagem whatsApp">
+      </a>
+    </div>
+    <div class="arroba">
+      <p><strong>erikaoliveiracontatos@gmail.com</strong></p>
+      </div>
+  </footer>
+    
+  
+    
+    
+    <script>
+      const wrapper = document.querySelector(".wrapper"),
+        signupHeader = document.querySelector(".signup header"),
+        loginHeader = document.querySelector(".login header");
+
+      loginHeader.addEventListener("click", () => {
+        wrapper.classList.add("active");
+      });
+      signupHeader.addEventListener("click", () => {
+        wrapper.classList.remove("active");
+      });
+    </script>
+
+    
+  </body>
+</html>
