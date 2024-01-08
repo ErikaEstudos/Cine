@@ -1,0 +1,18 @@
+.node-card{
+    flex-direction: column;
+    padding: 0px;
+    margin: 15px;
+}
+
+.node-card .card{
+    height: 300px;
+    width: 230px;
+    padding: 20px;
+    border-top-right-radius: 30%;
+    border-bottom-left-radius:30% ;
+}
+
+.node-card:hover{
+    transform: scale(1.04);
+    opacity: 0.8;
+}

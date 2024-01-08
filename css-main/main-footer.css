@@ -1,0 +1,73 @@
+.main-footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: linear-gradient(180deg,rgb(76, 74, 74),rgb(209, 41, 44));
+    min-height: 150px;
+    margin-top: -60px;
+}
+.logoEO{
+    margin: 15px;
+    width: 110px;
+    height: 70px;
+   
+}
+.boxLinks{
+    margin: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30%;
+}
+.links{
+  width: 40%;
+  display: flex;
+  justify-content:space-between;
+}
+
+.gitHub, .linkedin, .whatsApp{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 3px solid black;
+}
+
+.boxArroba{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+    
+}
+.email{
+    color: black;
+    font-size:25px;
+    padding: 15px;
+    
+}
+.email:hover{
+    transform: scale(1.09);
+    opacity: 0.8;
+   
+}
+
+@media screen and (max-width:1024px){
+    .main-footer{
+        margin-top: 150px;
+    }
+    
+}
+
+@media screen and (max-width:767px){
+    .main-footer{
+        margin-top: 0px;
+    }
+    
+    .arroba2 .email{
+        font-size: 18px;
+    }
+    
+}
+
+
+
+

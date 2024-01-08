@@ -1,0 +1,94 @@
+.main-header{
+    background-image: linear-gradient(180deg,rgb(246, 78, 81),rgb(76, 74, 74));
+    height: 130px;
+    width: 100%;
+    position:fixed;
+    z-index:2;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    
+}
+
+.two-header{
+    background-image: linear-gradient(120deg,#dbdb5afe,rgb(238, 102, 29));
+    height:auto;
+    width: 100%;
+    position: fixed;
+    display: flex;
+    z-index: 1;
+    justify-content: space-around;
+    visibility: hidden;
+}
+.two-header .login{
+    text-decoration: none;
+    text-align: center;
+    font-size: 26px;
+    font-family: "Roboto" , sans-serif;
+    border: 3px solid black;
+    border-radius: 9%;
+    background-color: rgba(244, 9, 9, 0.324);
+    color: white;
+    width: 95px;
+    height: auto;
+    margin-bottom: 10px;
+    
+}
+.two-header .button-exit{
+    height: 40px;
+    width: 80px;
+    border: solid 2px black;
+    border-radius: 13%;
+}
+.cinErika{
+    height: 90px;
+    width: 60%;
+}
+
+.button-exit {
+    height: 40px;
+    width: 80px;
+    border: solid 2px black;
+    border-radius: 13%;
+}
+
+.main-header .login{
+    text-decoration: none;
+    text-align: center;
+    font-size: 26px;
+    font-family: "Roboto" , sans-serif;
+    border: 3px solid black;
+    border-radius: 9%;
+    background-color: rgba(244, 9, 9, 0.324);
+    color: white;
+    width: 95px;
+    height: auto;
+}
+    
+ .login:hover{
+    color:yellow
+} 
+
+
+
+@media screen and (max-width:1024px){
+    
+}
+@media screen and (max-width:767px){
+    .main-header .cinErika{
+       min-width:100%; 
+    }
+    .main-header .button-exit{
+       display: none;
+    }
+    .main-header .login{
+       display: none;
+    }
+    .two-header{
+        visibility: visible;
+        padding-top: 100px;
+    }
+}
+    
+    
+

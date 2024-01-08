@@ -1,0 +1,46 @@
+.main-carrossel{
+    display: flex;
+    position: relative;
+    margin: 20px;
+    margin-top: 50px;
+    padding: 0;
+}
+
+.main-carrossel .button-arrow{
+    position:absolute;
+    top: 40%;
+    transform: translateY(50%);
+}
+
+.main-carrossel .button-arrow.-left{
+    z-index: 10;
+    visibility: hidden;
+    left: 12px;    
+}
+
+.main-carrossel .button-arrow.-right{
+    right: 12px;
+}
+
+.main-carrossel .items{
+    width: 100%;
+    overflow: hidden;
+}
+
+.main-carrossel .elements{
+    display:flex;
+    justify-content:space-between;
+    transition: transform 500ms ease-in-out;
+}
+
+@media screen and (max-width:1309px){
+.main-carrossel{
+    display: none;
+    }
+}
+@media screen and (max-width:767px){
+    .main-carrossel{
+        visibility: hidden;
+        height: 0;
+    }
+}
